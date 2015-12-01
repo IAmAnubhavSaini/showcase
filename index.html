@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="showcase">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title></title>
   <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="./angular.min.js"></script>
+  <script src="./showcase.app.js"></script>
   <style>
   /* fixing bootstrap */
     .navbar-fixed-top .navbar-right { margin-right: 0; }
@@ -127,24 +129,11 @@
             </span>
         </div>
     </div>
-    <div id="About"  class="light-background">
-         <h1>About</h1>
+    <div id="About"  class="light-background" >
+        <h1>About</h1>
         <hr class="separator" />
-        <div>
-            <span class="about-item">developer</span>
-            <span class="about-item">counter-strike-er</span>
-            <span class="about-item">open-source-er</span>
-            <span class="about-item">web-developer</span>
-            <span class="about-item">linux-kernel-builder</span>
-            <span class="about-item">writer</span>
-            <span class="about-item">blogger</span>
-            <span class="about-item">music-listener</span>
-            <span class="about-item">machine-learning-learner</span>
-            <span class="about-item">movie-criticiser</span>
-            <span class="about-item">helper</span>
-            <span class="about-item">javascript-er</span>
-            <span class="about-item">python-er</span>
-            <span class="about-item">angularjs-er</span>
+        <div ng-controller = "AboutTagsController as aboutTags">
+            <span class="about-item"  ng-repeat = "tag in aboutTags.tags">{{ tag }}</span>
         </div>
     </div>
     <div id="Portfolio">
@@ -170,6 +159,7 @@
   <div id="scripts">
     <script src="./jquery-2.1.4.min.js"></script>
     <script src="./bootstram.min.js"></script>
+
   </div>
 </body>
 </html>
