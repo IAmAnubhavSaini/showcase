@@ -18,7 +18,7 @@
     }
     #Home, #About, #Portfolio {
       background: transparent no-repeat fixed center center / cover;
-      height: 900px;
+      min-height: 900px;
       text-align: center;
       color: white;
       font-variant: petite-caps;
@@ -74,8 +74,11 @@
 
     .portfolio-item {
       background-color: rgba(0, 0, 0, 0.3);
+      border: thick solid rgba(0, 0, 0, 0.1);
       padding: 2em .2em;
-
+      margin: 2%;
+      width: 45%;
+      float:left;
     }
     .portfolio-details a {
       margin: 1em;
@@ -137,23 +140,37 @@
         </div>
     </div>
     <div id="Portfolio">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 portfolio-item">
-                    <h1 class="heading">jspaint</h1>
-                    <div class="portfolio-details">
-                        <div><a href="https://iamanubhavsaini.github.io/jspaint">app</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-6 portfolio-item">
-                    <h1 class="heading">book - javascript</h1>
-                    <div class="portfolio-details">
-                        <div><a href="https://iamanubhavsaini.gitbooks.io/javascript/">read online</a></div>
-                    </div>
+      <h1>Portfolio</h1>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="portfolio-item">
+                  <h1 class="heading">jspaint</h1>
+                  <div class="portfolio-details">
+                      <div><a href="https://iamanubhavsaini.github.io/jspaint">app</a></div>
+                  </div>
+              </div>
+              <div class="portfolio-item">
+                  <h1 class="heading">book - javascript</h1>
+                  <div class="portfolio-details">
+                      <div><a href="https://iamanubhavsaini.gitbooks.io/javascript/">read online</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-item">
+                <h1 class="heading">The diary of a wimpy coder</h1>
+                <div class="portfolio-details">
+                    <div><a href="https://the-diary-of-a-wimpy-coder.blogspot.in">old-blog</a></div>
                 </div>
             </div>
-            <div class="row"></div>
-        </div>
+            <div class="portfolio-item">
+                <h1 class="heading">blag</h1>
+                <div class="portfolio-details">
+                    <div><a href="https://iamanubhavsaini.github.io/">visit</a></div>
+                </div>
+            </div>
+          </div>
+      </div>
     </div>
   </section>
   <div id="scripts">
