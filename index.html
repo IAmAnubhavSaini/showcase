@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <style>
+  /* fixing bootstrap */
+    .navbar-fixed-top .navbar-right { margin-right: 0; }
+  /* bootstrap fix end */
+    body { min-width: 900px; }
+    #content {
+      padding-top: 50px;
+    }
+    #Home, #About, #Portfolio {
+      background: transparent no-repeat fixed center center / cover;
+      height: 900px;
+      text-align: center;
+      color: white;
+      font-variant: petite-caps;
+      padding: 10% 0;
+    }
+    #Home {
+      background-image: url('./ubuntu.jpg');
+      z-index: 1;
+    }
+    #About {
+      background-image: url('./meditate.png');
+      z-index: 2;
+      color: black;
+    }
+    #About .about-item {
+      margin: 1em;
+    }
+    #Portfolio {
+      background-image: url('./firefox-nebula.jpg');
+      z-index: 3;
+    }
+    .heading { font-size: 3em; }
+    #Home .heading {
+      font-size: 6em;
+    }
+    #Portfolio .portfolio-item .heading { font-size: 4em; }
+
+    .top-light.text.white {
+      text-shadow: 10px 20px 3px black, 0 -1px 3px white;
+    }
+    .dark-background .separator, .light-background .separator {
+      border-width: 10px;
+    }
+    .light-background .separator {
+      border-color: black;
+    }
+    .top-light.box.white {
+      box-shadow: 10px 20px 3px black, 0 -1px 3px white;
+    }
+    .reach {
+      margin: 2em;
+      padding: 2em;
+    }
+    .reach span a {
+      color: white;
+      font-size: 2em;
+      text-decoration: underline;
+    }
+    .reach span a:hover {
+      text-decoration: none;
+      border-bottom: thin solid red;
+    }
+
+    .portfolio-item {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 2em .2em;
+
+    }
+    .portfolio-details a {
+      margin: 1em;
+      padding: .2em 1em;
+      background-color: rgba(200, 200, 200, 0.5);
+      font-size: 2em;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="Top"></div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="collapsable-menu">
+                    <span class="sr-only">Toggle Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#Top">Anubhav Saini</a>
+            </div>
+            <div id="collapsable-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <section id="content">
+    <div id="Home" class="dark-background">
+         <h1 class="heading text top-light white">hi, I am Anubhav Saini</h1>
+        <hr class="separator top-light box white" />
+        <div class="reach row">
+            <span class="col-xs-3">
+                <a href="https://twitter.com/iamanubhavsaini" class="text top-light white">Twitter</a>
+            </span>
+            <span class="col-xs-3">
+                <a href="https://in.linkedin.com/in/iamanubhavsaini" class="text top-light white">LinkedIn</a>
+            </span>
+            <span class="col-xs-3">
+                <a href="http://www.freecodecamp.com/iamanubhavsaini" class="text top-light white">FreeCodeCamp</a>
+            </span>
+            <span class="col-xs-3">
+                <a href="https://github.com/IAmAnubhavSaini" class="text top-light white">GitHub</a>
+            </span>
+        </div>
+    </div>
+    <div id="About"  class="light-background">
+         <h1>About</h1>
+        <hr class="separator" />
+        <div>
+            <span class="about-item">developer</span>
+            <span class="about-item">counter-strike-er</span>
+            <span class="about-item">open-source-er</span>
+            <span class="about-item">web-developer</span>
+            <span class="about-item">linux-kernel-builder</span>
+            <span class="about-item">writer</span>
+            <span class="about-item">blogger</span>
+            <span class="about-item">music-listener</span>
+            <span class="about-item">machine-learning-learner</span>
+            <span class="about-item">movie-criticiser</span>
+            <span class="about-item">helper</span>
+            <span class="about-item">javascript-er</span>
+            <span class="about-item">python-er</span>
+            <span class="about-item">angularjs-er</span>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 portfolio-item">
+                    <h1 class="heading">jspaint</h1>
+                    <div class="portfolio-details">
+                        <div><a href="https://iamanubhavsaini.github.io/jspaint">app</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 portfolio-item">
+                    <h1 class="heading">book - javascript</h1>
+                    <div class="portfolio-details">
+                        <div><a href="https://iamanubhavsaini.gitbooks.io/javascript/">read online</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+    </div>
+  </section>
+  <div id="scripts">
+    <script src="./jquery-2.1.4.min.js"></script>
+    <script src="./bootstram.min.js"></script>
+  </div>
+</body>
+</html>
